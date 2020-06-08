@@ -1,74 +1,82 @@
-import { Ionicons } from '@expo/vector-icons';
-import * as WebBrowser from 'expo-web-browser';
 import * as React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import { RectButton, ScrollView } from 'react-native-gesture-handler';
+import {StyleSheet, Text, View, Image, TextInput} from 'react-native';
+import {ScrollView} from 'react-native-gesture-handler';
+import Header from "../components/AreaHeader";
+import IconText from "../components/IconText";
+import detailAreaData from "../areaData/detailArea";
 
-export default function LinksScreen() {
-  return (
-    <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-      <OptionButton
-        icon="md-school"
-        label="Read the Expo documentation"
-        onPress={() => WebBrowser.openBrowserAsync('https://docs.expo.io')}
-      />
+const LocationIcon = require('../assets/icons/location.png');
+const TimeIcon = require('../assets/icons/time.png');
+const CircleOrangeIcon = require('../assets/icons/circle-orange.png');
 
-      <OptionButton
-        icon="md-compass"
-        label="Read the React Navigation documentation"
-        onPress={() => WebBrowser.openBrowserAsync('https://reactnavigation.org')}
-      />
+export default class AreaDetailScreen extends React.Component {
 
-      <OptionButton
-        icon="ios-chatboxes"
-        label="Ask a question on the forums"
-        onPress={() => WebBrowser.openBrowserAsync('https://forums.expo.io')}
-        isLastOption
-      />
-    </ScrollView>
-  );
-}
+  constructor(props) {
+    super(props);
+    this.state = {
+      id: props.route.params.id,
+      areaInfo: detailAreaData,
+      detailArea: {},
+    };
 
-function OptionButton({ icon, label, onPress, isLastOption }) {
-  return (
-    <RectButton style={[styles.option, isLastOption && styles.lastOption]} onPress={onPress}>
-      <View style={{ flexDirection: 'row' }}>
-        <View style={styles.optionIconContainer}>
-          <Ionicons name={icon} size={22} color="rgba(0,0,0,0.35)" />
+  }
+
+  componentDidMount() {
+    this.getData();
+  }
+
+  getData() {
+    const area = this.state.areaInfo.filter(obj => {
+      return obj.id === this.state.id
+    });
+
+    this.setState({detailArea: area[0]});
+  }
+
+
+  render() {
+    return (
+
+      <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+        <Header
+          source={{uri: "https://media-cdn.tripadvisor.com/media/photo-m/1280/18/bd/a1/59/magische-kleuren-bij.jpg"}}
+          color="white" title={this.state.detailArea.title}/>
+
+        <View style={{backgroundColor: 'white', borderRadius: 20, marginTop: -50}}>
+          <Text style={styles.text}>
+            {this.state.detailArea.description}
+          </Text>
+
+          <View style={styles.iconTextContainer}>
+            <IconText icon={LocationIcon}
+                      text={this.state.detailArea.address}/>
+
+            <IconText icon={TimeIcon}
+                      text={this.state.detailArea.openinghours}/>
+
+            <IconText icon={CircleOrangeIcon} text='Het is rustig'/>
+          </View>
         </View>
-        <View style={styles.optionTextContainer}>
-          <Text style={styles.optionText}>{label}</Text>
-        </View>
-      </View>
-    </RectButton>
-  );
+      </ScrollView>
+    );
+  }
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fafafa',
+    backgroundColor: '#fff',
   },
   contentContainer: {
-    paddingTop: 15,
+    paddingTop: 75,
   },
-  optionIconContainer: {
-    marginRight: 12,
+  text: {
+    padding: 20,
+    lineHeight: 21,
+    fontSize: 13,
+    marginBottom: 30,
   },
-  option: {
-    backgroundColor: '#fdfdfd',
-    paddingHorizontal: 15,
-    paddingVertical: 15,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderBottomWidth: 0,
-    borderColor: '#ededed',
-  },
-  lastOption: {
-    borderBottomWidth: StyleSheet.hairlineWidth,
-  },
-  optionText: {
-    fontSize: 15,
-    alignSelf: 'flex-start',
-    marginTop: 1,
+  iconTextContainer: {
+    padding: 20,
   },
 });
