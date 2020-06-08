@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "title": "Nationaal Park Veluwezoom",
+    "description": "Nationaal Park Veluwezoom telt ruim 5.000 hectare en is onderdeel van de Veluwe, een groot, aaneengesloten natuurgebied. Je vindt hier haast ongerepte natuur met bossen, heidevelden, zandverstuivingen en landgoederen. Kenmerkend voor Veluwezoom is het reliëf: nergens anders op de Veluwe vind je zoveel heuvels en heb je zo’n mooi uitzicht. Op de Posbank bijvoorbeeld kun je bij mooi weer tot in Duitsland kijken.",
+    "address": "Straatweg 5a, 6991 JE Huissen (GD) (026) 497 91 00",
+    "openinghours": "Toegang van zonsopgang tot zonsondergang: 05.56 - 21.16",
+    "coordinates": {
+      "latitude": 52.016869,
+      "longitude": 6.024984
+    }
+  },
+  {
+    "id": 2,
+    "title": "Tiengemeten",
+    "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
+    "openinghours": "Toegang van zonsopgang tot zonsondergang: 05.56 - 21.16",
+    "coordinates": {
+      "latitude": 51.73851018308143,
+      "longitude": 4.316253662109375
+    }
+  },
+  {
+    "id": 3,
+    "title": "Nationaal Park Loonse en Drunense Duinen",
+    "description": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.",
+    "address": "Schoorstraat, 5071 RC Udenhout\n(013) 591 50 00",
+    "openinghours": "Toegang van zonsopgang tot zonsondergang: \n05.19 - 21.59",
+    "coordinates": {
+      "latitude": 51.64486796450331,
+      "longitude": 5.131645202636719
+    }
+  },
+  {
+    "id": 3,
+    "title": "Nationaal Park Oosterschelde",
+    "description": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.",
+    "address": "Schoorstraat, 5071 RC Udenhout\n(013) 591 50 00",
+    "openinghours": "Toegang van zonsopgang tot zonsondergang: \n05.19 - 21.59",
+    "coordinates": {
+      "latitude": 51.6765,
+      "longitude": 3.75757
+    }
+  }
+]
