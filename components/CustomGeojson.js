@@ -15,10 +15,7 @@ export default class CustomGeojson extends React.Component {
   _setColors() {
     this.setState({
       fillColor: this.props.fillColor ? this.props.fillColor : 'grey',
-      // fillColor: 'rgba(250,0,0,0.51)',
-      strokeColor: 'rgba(60, 165, 255, 1)',
-      opacity: 0.5,
-
+      strokeColor: '#000',
     })
   }
 
@@ -28,12 +25,11 @@ export default class CustomGeojson extends React.Component {
 
   render() {
     const {geojson} = this.props;
-    const {strokeColor, fillColor, opacity} = this.state;
+    const {strokeColor, fillColor} = this.state;
     return <Geojson
       geojson={geojson}
       strokeColor={strokeColor}
-      opacity={opacity}
-      strokeWidth={3}
-      fillColor={fillColor} />
+      strokeWidth={2}
+      fillColor={fillColor}/>
   }
 }

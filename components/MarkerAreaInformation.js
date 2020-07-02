@@ -5,11 +5,11 @@ import GebiedsMarker from '../areaData/detailArea';
 
 const LocationIcon = require('../assets/icons/location.png');
 const TimeIcon = require('../assets/icons/time.png');
-const CircleOrangeIcon = require('../assets/icons/circle-orange.png');
+const OrangeIcon = require('../assets/icons/circle-orange.png');
+const DarkRedIcon = require('../assets/icons/circle-dark-red.png');
 
 import AreaDetailScreen from "../screens/AreaDetailScreen";
 import CustomButton from "./CustomButton";
-
 
 export default class MarkerAreaInformation extends React.Component {
   constructor(props) {
@@ -48,16 +48,25 @@ export default class MarkerAreaInformation extends React.Component {
           <IconText icon={TimeIcon}
                     text={this.state.detailArea.openinghours ? this.state.detailArea.openinghours : "Toegang van zonsopgang tot zonsondergang"}/>
 
-          <IconText icon={CircleOrangeIcon} text='Het is rustig'/>
+          <IconText icon={OrangeIcon} text={this.state.detailArea.busy}/>
         </View>
 
-        <CustomButton title="Ga naar gebiedsinformatie" onpress={() => this.props.navigate('AreaDetailScreen', {id: this.props.id})}/>
+        <CustomButton title="Ga naar gebiedsinformatie"
+                      onpress={() => this.props.navigate('AreaDetailScreen', {id: this.props.id})}/>
 
-        <Text
-          style={{color: '#CF2C6B', textAlign: 'center', textDecorationLine: "underline", textDecorationStyle: "solid"}}
-          onPress={() => Linking.openURL('#')}>
-          Gebied op de kaart
-        </Text>
+        <TouchableOpacity
+          onPress={() => this.props.action(this.state.detailArea.latitude, this.state.detailArea.longitude)}
+        >
+          <Text
+            style={{
+              color: '#CF2C6B',
+              textAlign: 'center',
+              textDecorationLine: "underline",
+              textDecorationStyle: "solid"
+            }}>
+            Gebied op de kaart
+          </Text>
+        </TouchableOpacity>
 
       </View>
     );
@@ -80,7 +89,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.22,
     shadowRadius: 2.22,
-
     elevation: 4,
   },
   title: {

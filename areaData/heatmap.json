@@ -1,5 +1,6 @@
 [
   {
+    "__comment":"Loonse en Drunense duinen",
     "longitude": 5.07967472076416,
     "latitude": 51.65306939358465,
     "weight": 2
@@ -17,6 +18,166 @@
   {
     "longitude": 5.074267387390137,
     "latitude": 51.642417899182995,
+    "weight": 10
+  },
+  {
+    "longitude": 5.1944732666015625,
+    "latitude": 51.65125881609385,
+    "weight": 1
+  },
+  {
+    "longitude": 5.203399658203125,
+    "latitude": 51.649128632334225,
+    "weight": 10
+  },
+
+
+  {
+    "__comment":"Veluwezoom",
+    "longitude": 6.024627685546875,
+    "latitude": 52.04911238586802,
+    "weight": 80
+  },
+  {
+    "longitude": 6.025228500366211,
+    "latitude": 52.04895403162673,
+    "weight": 40
+  },
+  {
+    "longitude": 5.990939140319824,
+    "latitude": 52.04634110562597,
+    "weight": 80
+  },
+  {
+    "longitude": 5.990724563598632,
+    "latitude": 52.04660504448202,
+    "weight": 90
+  },
+  {
+    "longitude": 6.004328727722168,
+    "latitude": 52.04364884025292,
+    "weight": 100
+  },
+
+  {
+    "__comment":"Polder Schieveen",
+    "longitude": 4.310588836669922,
+    "latitude": 51.927436846913615,
+    "weight": 10
+  },
+  {
+    "longitude": 4.3128204345703125,
+    "latitude": 51.926272410001324,
+    "weight": 10
+  },
+  {
+    "longitude": 4.277715682983398,
+    "latitude": 51.937968335572215,
+    "weight": 10
+  },
+  {
+    "longitude": 4.27891731262207,
+    "latitude": 51.93738625751938,
+    "weight": 5
+  },
+  {
+    "longitude": 4.277876615524292,
+    "latitude": 51.937935263157904,
+    "weight": 10
+  },
+  {
+    "longitude": 4.282865524291991,
+    "latitude": 51.951883043962205,
+    "weight": 10
+  },
+
+  {
+    "__comment":"Vlietlanden",
+    "longitude": 4.414100646972656,
+    "latitude": 51.957807388715516,
+    "weight": 40
+  },
+  {
+    "longitude": 4.41375732421875,
+    "latitude": 51.95653795216583,
+    "weight": 30
+  },
+  {
+    "longitude": 4.410667419433594,
+    "latitude": 51.958018957979306,
+    "weight": 30
+  },
+
+  {
+    "longitude": 4.428691864013672,
+    "latitude": 51.9692307002609,
+    "weight": 60
+  },
+  {
+    "longitude": 4.432640075683594,
+    "latitude": 51.96933645806144,
+    "weight": 30
+  },
+  {
+    "longitude": 4.431095123291016,
+    "latitude": 51.96732701717229,
+    "weight": 60
+  },
+  {
+    "longitude": 4.435214996337891,
+    "latitude": 51.96806734798239,
+    "weight": 30
+  },
+  {
+    "longitude": 4.435901641845703,
+    "latitude": 51.97240332571046,
+    "weight": 30
+  },
+  {
+    "longitude": 4.439506530761719,
+    "latitude": 51.97494126434531,
+    "weight": 30
+  },
+  {
+    "longitude": 4.447231292724609,
+    "latitude": 51.967644303302706,
+    "weight": 30
+  },
+  {
+    "longitude": 4.446887969970703,
+    "latitude": 51.9664809098427,
+    "weight": 80
+  },
+  {
+    "longitude": 4.31239128112793,
+    "latitude": 51.92584897090665,
+    "weight": 80
+  },
+  {
+    "longitude": 4.329471588134766,
+    "latitude": 51.934211153382435,
+    "weight": 80
+  },
+
+  {
+    "__comment":"Tiengemeten",
+    "longitude": 4.350242614746094,
+    "latitude": 51.734789475607165,
+    "weight": 10
+  },
+  {
+    "longitude": 4.350757598876953,
+    "latitude": 51.73372636006114,
+    "weight": 5
+  },
+  {
+    "longitude": 4.3471527099609375,
+    "latitude": 51.73436423238974,
+    "weight": 5
+  },
+  {
+    "longitude": 4.298057556152344,
+    "latitude": 51.740529867422545,
     "weight": 10
   }
 ]

@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
   marker: {
     width: 50,
     height: 50,
-    marginBottom: 25,
   },
 });
 

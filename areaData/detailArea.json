@@ -5,9 +5,22 @@
     "description": "Nationaal Park Veluwezoom telt ruim 5.000 hectare en is onderdeel van de Veluwe, een groot, aaneengesloten natuurgebied. Je vindt hier haast ongerepte natuur met bossen, heidevelden, zandverstuivingen en landgoederen. Kenmerkend voor Veluwezoom is het reliëf: nergens anders op de Veluwe vind je zoveel heuvels en heb je zo’n mooi uitzicht. Op de Posbank bijvoorbeeld kun je bij mooi weer tot in Duitsland kijken.",
     "address": "Straatweg 5a, 6991 JE Huissen (GD) (026) 497 91 00",
     "openinghours": "Toegang van zonsopgang tot zonsondergang: 05.56 - 21.16",
+    "busyColor": 4,
+    "busy": "Het is erg druk",
     "coordinates": {
       "latitude": 52.016869,
       "longitude": 6.024984
+    },
+    "latitude": 52.016869,
+    "longitude": 6.024984,
+    "days": {
+      "0": [0, 0, 2, 5, 20, 30, 25, 20, 5, 0, 0, 10],
+      "1": [0, 0, 2, 5, 20, 30, 25, 20, 5, 0, 0, 20],
+      "2": [0, 0, 2, 5, 20, 30, 25, 20, 5, 0, 0, 30],
+      "3": [0, 0, 2, 5, 20, 30, 25, 20, 5, 0, 0, 40],
+      "4": [0, 0, 2, 5, 20, 30, 25, 20, 5, 0, 0, 50],
+      "5": [0, 0, 2, 5, 20, 30, 25, 20, 5, 0, 0, 60],
+      "6": [0, 0, 2, 5, 20, 30, 25, 20, 5, 0, 0, 70]
     }
   },
   {
@@ -15,10 +28,14 @@
     "title": "Tiengemeten",
     "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.",
     "openinghours": "Toegang van zonsopgang tot zonsondergang: 05.56 - 21.16",
+    "busyColor": 4,
+    "busy": "Het is erg druk",
     "coordinates": {
       "latitude": 51.73851018308143,
       "longitude": 4.316253662109375
-    }
+    },
+    "latitude": 51.73851018308143,
+    "longitude": 4.316253662109375
   },
   {
     "id": 3,
@@ -26,10 +43,14 @@
     "description": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.",
     "address": "Schoorstraat, 5071 RC Udenhout\n(013) 591 50 00",
     "openinghours": "Toegang van zonsopgang tot zonsondergang: \n05.19 - 21.59",
+    "busyColor": 4,
+    "busy": "Het is rustig",
     "coordinates": {
       "latitude": 51.64486796450331,
       "longitude": 5.131645202636719
-    }
+    },
+    "latitude": 51.64486796450331,
+    "longitude": 5.131645202636719
   },
   {
     "id": 4,
@@ -37,9 +58,43 @@
     "description": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.",
     "address": "Schoorstraat, 5071 RC Udenhout\n(013) 591 50 00",
     "openinghours": "Toegang van zonsopgang tot zonsondergang: \n05.19 - 21.59",
+    "busyColor": 1,
+    "busy": "Het is erg druk",
     "coordinates": {
       "latitude": 51.6765,
       "longitude": 3.75757
-    }
+    },
+    "latitude": 51.6765,
+    "longitude": 3.75757
+  },
+  {
+    "id": 5,
+    "title": "Polder Schieveen",
+    "description": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.",
+    "address": "Schoorstraat, 5071 RC Udenhout\n(013) 591 50 00",
+    "openinghours": "Toegang van zonsopgang tot zonsondergang: \n05.19 - 21.59",
+    "busyColor": 1,
+    "busy": "Het is rustig",
+    "coordinates": {
+      "latitude": 51.9709782,
+      "longitude": 4.416833
+    },
+    "latitude": 51.9709782,
+    "longitude": 4.416833
+  },
+  {
+    "id": 6,
+    "title": "Vlietlanden",
+    "description": "Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.",
+    "address": "Schoorstraat, 5071 RC Udenhout\n(013) 591 50 00",
+    "openinghours": "Toegang van zonsopgang tot zonsondergang: \n05.19 - 21.59",
+    "busyColor": 1,
+    "busy": "Het is rustig",
+    "coordinates": {
+      "latitude": 51.9381,
+      "longitude": 4.32692
+    },
+    "latitude": 51.9381,
+    "longitude": 4.32692
   }
 ]
